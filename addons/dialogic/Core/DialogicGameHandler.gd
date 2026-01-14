@@ -135,6 +135,9 @@ var PortraitContainers := preload("res://addons/dialogic/Modules/Character/subsy
 var Portraits := preload("res://addons/dialogic/Modules/Character/subsystem_portraits.gd").new():
 	get: return get_subsystem("Portraits")
 
+var Rollback := preload("res://addons/dialogic/Modules/Rollback/subsystem_rollback.gd").new():
+	get: return get_subsystem("Rollback")
+
 var Save := preload("res://addons/dialogic/Modules/Save/subsystem_save.gd").new():
 	get: return get_subsystem("Save")
 

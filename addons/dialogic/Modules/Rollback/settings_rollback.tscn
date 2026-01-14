@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Rollback/settings_rollback.gd" id="1_settings"]
+
+[node name="Rollback" type="VBoxContainer"]
+offset_right = 258.0
+offset_bottom = 180.0
+script = ExtResource("1_settings")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Rollback Settings"
+
+[node name="Description" type="Label" parent="."]
+layout_mode = 2
+text = "Configure rollback behavior"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="HistorySizeLabel" type="Label" parent="."]
+layout_mode = 2
+text = "History Size:"
+
+[node name="HistorySize" type="SpinBox" parent="."]
+layout_mode = 2
+min_value = 10.0
+max_value = 500.0
+value = 100.0
+
+[node name="MouseWheelLabel" type="Label" parent="."]
+layout_mode = 2
+text = "Mouse Wheel:"
+
+[node name="MouseWheelCheck" type="CheckBox" parent="."]
+layout_mode = 2
+button_pressed = true
+text = "Enable mouse wheel for rollback"
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="SaveLabel" type="Label" parent="."]
+layout_mode = 2
+text = "Save Integration:"
+
+[node name="SaveInfo" type="Label" parent="."]
+layout_mode = 2
+text = "Rollback history is saved with
+game saves automatically."
+
+[node name="HSeparator3" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="BlockLabel" type="Label" parent="."]
+layout_mode = 2
+text = "Blocking Rollback:"
+
+[node name="BlockInfo" type="Label" parent="."]
+layout_mode = 2
+text = "Use {Block Rollback} and {Unblock Rollback}
+events in your timeline to control when
+rollback is allowed."
+autowrap_mode = 2
